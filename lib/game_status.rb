@@ -33,8 +33,7 @@ def won?(board)
 end
 
 def full?(board)
-  
-  board.detect do |index| 
+  board.all do |index| 
     index.position_taken?(board,index)
   end
 end
