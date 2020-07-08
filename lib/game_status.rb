@@ -33,12 +33,13 @@ def won?(board)
 end
 
 def full?(board)
-  board.all 
   
-  board.each do |index|
-    position_taken?(board, index)
+  board.detect do |index| 
+    index.position_taken?(board,index)
   end
 end
+
+[1,2,3].detect{|i| i.?}
 
 
     
