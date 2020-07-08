@@ -33,11 +33,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|index| }
+  board.all? {|index| index == " "}
 end
 
 
-ndex.position_taken?(board, index) == true
 
 
     
